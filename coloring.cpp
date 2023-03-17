@@ -6,7 +6,7 @@ int main()
 	int numOfVertices, numOfEdges;
 	// Read File
 	FILE *fptr;
-	fptr = fopen("DoThi01.txt", "r");
+	fptr = fopen("graph.txt", "r");
 	fscanf(fptr, "%d", &numOfVertices);
 	fscanf(fptr, "%d", &numOfEdges);
 	int tree[2][numOfEdges + 1];
@@ -68,8 +68,8 @@ int main()
 	}
 	// Print File
 	FILE *fileDot;
-	fileDot = fopen("DoThiDaToMau.dot", "w");
-	fputs("graph dothi\n {\n", fileDot);
+	fileDot = fopen("coloredgraph.dot", "w");
+	fputs("graph graph\n {\n", fileDot);
 	for (int b = 1; b <= numOfVertices; b++)
 	{
 		fprintf(fileDot, "%d [fillcolor=%s, style=filled];\n", b, colorLabel[b]);
