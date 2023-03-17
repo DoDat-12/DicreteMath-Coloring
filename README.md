@@ -14,7 +14,7 @@ From file graph.txt:
 - The first line contains two integers $n$ and $m$ is the number of vertices and edges of the graph.
 - In the next $m$ lines, each line contains two integers corresponding to an edge of the graph.
 ### Output
-File coloredgraph.dot graph representation in DOT language with colored vertices color.
+File coloredgraph.dot graph representation in DOT language with colored vertices.
 
 ## Example
 ### Input
